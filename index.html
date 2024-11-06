@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div
+      style="position: relative"
+      id="app"
+    >
+      <div
+        style="
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+        "
+      >
+        <button
+          id="up"
+          style="
+            color: white;
+            font-size: 14px;
+            padding: 12px 25px;
+            border-radius: 10px;
+            background: green;
+            cursor: pointer;
+          "
+        >
+          UP
+        </button>
+        <button
+          id="down"
+          style="
+            color: white;
+            font-size: 14px;
+            padding: 12px 25px;
+            border-radius: 10px;
+            background: red;
+            cursor: pointer;
+          "
+        >
+          DOWN
+        </button>
+
+        <div style="cursor: pointer">
+          <label for="auto_scroll">AUTO SCROLL</label>
+          <input
+            id="auto_scroll"
+            type="checkbox"
+          />
+        </div>
+      </div>
+      <canvas
+        style="position: relative"
+        id="visualization"
+      ></canvas>
+    </div>
+    <script
+      type="module"
+      src="/src/main.ts"
+    ></script>
+  </body>
+</html>
